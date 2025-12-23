@@ -2,7 +2,7 @@
 
 The **Vehicle Rental System** database designed to manage vehicle rentals, user accounts, and booking transactions.
 
-
+![er-diagram](er-diagram.png)
 
 
 ### Relationships
