@@ -60,72 +60,72 @@ CREATE TABLE IF NOT EXISTS bookings(
 
 ### Query 1: JOIN Operation
 
-**Objective**
+**Objective**:
 Get booking details along with customer name and vehicle name.
 
-**Explanation**
+**Explanation**:
 We use INNER JOIN to connect three tables: bookings, users and vehicles.
 This helps us see data together instead of separate tables.
 
-**Why Important**
+**Why Important**:
 In real application, we need full info.
 Only booking table is not useful. We must know who booked and which vehicle.
 
-**Result**
+**Result**:
 Shows booking info like user name, vehicle name, booking date and total cost.
 
 ---
 
 ### Query 2: NOT EXISTS Subquery
 
-**Objective**
+**Objective**:
 Find vehicles which never booked by anyone.
 
-**Explanation**
+**Explanation**:
 NOT EXISTS check booking table.
 If booking not found for a vehicle, then that vehicle is selected.
 
-**Why Important**
+**Why Important**:
 Helps business to find unused vehicles.
 These vehicles may need promotion or price change.
 
-**Result**
+**Result**:
 List of vehicles which have no booking at all.
 
 ---
 
 ### Query 3: WHERE Clause
 
-**Objective**
+**Objective**:
 Get all available cars.
 
-**Explanation**
+**Explanation**:
 WHERE condition is used to filter data.
 We check vehicle type is car and status is available.
 
-**Why Important**
+**Why Important**:
 Customer should see only available vehicles.
 No one wants to see rented or under maintenance vehicle.
 
-**Result**
+**Result**:
 Only cars which are ready for rent.
 
 ---
 
 ### Query 4: GROUP BY and HAVING
 
-**Objective**
+**Objective**: 
 Find vehicles which booked more than 2 times.
 
-**Explanation**
+**Explanation**:
 GROUP BY is used to group booking by vehicle.
 COUNT calculate how many times vehicle booked.
 HAVING filter result after counting.
 
-**Why Important**
+**Why Important**:
 Shows which vehicle is popular.
 Business can understand which vehicle earn more money.
 
-**Result**
+**Result**:
 Vehicles which booked more than two times.
 
